@@ -1165,6 +1165,11 @@
                 "id": 5,
                 "name": "reused",
                 "type": "bool"
+              },
+              {
+                "id": 6,
+                "name": "schema_routed",
+                "type": "bool"
               }
             ]
           },

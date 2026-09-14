@@ -301,6 +301,10 @@ message PitrDBMap {
   // whether this db has been reused
   // skip restoring the metakv of database in log restore if it is true
   bool reused = 5;
+  // whether an explicit schema-level rename rule matched this source schema, so
+  // the target schema is restored even when all of its tables are routed to
+  // another target schema
+  bool schema_routed = 6;
 }
 
 message RawRange {
